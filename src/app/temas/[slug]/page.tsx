@@ -31,16 +31,18 @@ export default function DiagnosticoPage({ params }: { params: { slug: string } }
   const data = conteudos[params.slug]
 
   if (!data) {
-    return <p className="p-6">Diagnóstico não encontrado.</p>
+    return <main className="min-h-screen p-6 bg-green-100"><p className="p-6">Diagnóstico não encontrado.</p></main>
   }
 
   return (
-    <main className="min-h-screen p-6 max-w-3xl mx-auto bg-green-100">
-      <h1 className="text-2xl font-bold mb-4">{data.titulo}</h1>
-      <pre className="bg-white p-4 rounded whitespace-pre-wrap mb-6 shadow-md">{data.texto}</pre>
-      <Link href="/temas" className="text-blue-600 underline">
-        ← Voltar para seleção
-      </Link>
+    <main className="min-h-screen p-6 bg-green-100 flex flex-col items-center">
+      <div className="w-full max-w-3xl">
+        <h1 className="text-2xl font-bold mb-4">{data.titulo}</h1>
+        <pre className="bg-white p-4 rounded whitespace-pre-wrap mb-6 shadow-md">{data.texto}</pre>
+        <Link href="/temas" className="text-blue-600 underline">
+          ← Voltar para seleção
+        </Link>
+      </div>
     </main>
   )
 }
