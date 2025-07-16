@@ -2,27 +2,26 @@
 import { useRouter } from 'next/navigation'
 
 const temas = [
-  { slug: 'fratura-esmalte', titulo: 'Fratura de Esmalte' },
-  { slug: 'fratura-dentina', titulo: 'Fratura de Esmalte e Dentina' },
-  { slug: 'fratura-exposicao-pulpar', titulo: 'Fratura com Exposição Pulpar' },
-  { slug: 'fratura-raiz', titulo: 'Fratura de Raiz' },
-  { slug: 'luxacao-extrusiva', titulo: 'Luxação Extrusiva' },
-  { slug: 'luxacao-intrusiva', titulo: 'Luxação Intrusiva' },
-  { slug: 'avulsao', titulo: 'Avulsão' }
+  { slug: 'trauma-deciduos', titulo: 'Trauma em Dentes Decíduos' },
+  { slug: 'exame-radiografico', titulo: 'Exame Radiográfico' },
+  { slug: 'primeiro-atendimento', titulo: 'Primeiro Atendimento' },
+  { slug: 'diagnostico-conduta', titulo: 'Diagnóstico e conduta clínica' },
+  { slug: 'possiveis-alteracoes', titulo: 'Possíveis alterações' },
+  { slug: 'como-evitar', titulo: 'Como evitar?' }
 ]
 
 export default function Temas() {
   const router = useRouter()
 
   return (
-    <main className="min-h-screen p-6">
-      <h1 className="text-2xl font-bold mb-6 text-center">Selecione o Diagnóstico</h1>
-      <div className="grid gap-4 max-w-xl mx-auto">
+    <main className="min-h-screen p-6 bg-green-100 flex flex-col items-center">
+      <h1 className="text-2xl font-bold mb-6 text-center">Selecione a informação desejada</h1>
+      <div className="flex flex-col gap-4 w-full max-w-xs">
         {temas.map((t) => (
           <button
             key={t.slug}
             onClick={() => router.push(`/temas/${t.slug}`)}
-            className="bg-gray-100 hover:bg-blue-100 p-4 rounded-lg border text-left"
+            className="bg-green-600 text-white py-3 px-4 rounded border border-white text-center shadow"
           >
             {t.titulo}
           </button>

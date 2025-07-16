@@ -1,19 +1,30 @@
 import Link from 'next/link'
 
 const conteudos: Record<string, { titulo: string; texto: string }> = {
-  'fratura-esmalte': {
-    titulo: 'Fratura de Esmalte',
-    texto: `Diagnóstico: Fratura de esmalte
-Conduta clínica: Arredondar as bordas cortantes.
-Acompanhamento: Controle em 4 semanas, observar alteração de cor e mobilidade.`
+  'trauma-deciduos': {
+    titulo: 'Trauma em Dentes Decíduos',
+    texto: 'Conteúdo em construção...'
   },
-  'fratura-dentina': {
-    titulo: 'Fratura de Esmalte e Dentina',
-    texto: `Diagnóstico: Fratura envolvendo esmalte e dentina, sem exposição pulpar.
-Conduta: Selar a dentina com ionômero de vidro.
-Acompanhamento: Controle em 4 semanas, observar alterações.`
+  'exame-radiografico': {
+    titulo: 'Exame Radiográfico',
+    texto: 'Conteúdo em construção...'
+  },
+  'primeiro-atendimento': {
+    titulo: 'Primeiro Atendimento',
+    texto: 'Conteúdo em construção...'
+  },
+  'diagnostico-conduta': {
+    titulo: 'Diagnóstico e conduta clínica',
+    texto: 'Conteúdo em construção...'
+  },
+  'possiveis-alteracoes': {
+    titulo: 'Possíveis alterações',
+    texto: 'Conteúdo em construção...'
+  },
+  'como-evitar': {
+    titulo: 'Como evitar?',
+    texto: 'Conteúdo em construção...'
   }
-  // adicione outros...
 }
 
 export default function DiagnosticoPage({ params }: { params: { slug: string } }) {
@@ -24,9 +35,9 @@ export default function DiagnosticoPage({ params }: { params: { slug: string } }
   }
 
   return (
-    <main className="min-h-screen p-6 max-w-3xl mx-auto">
+    <main className="min-h-screen p-6 max-w-3xl mx-auto bg-green-100">
       <h1 className="text-2xl font-bold mb-4">{data.titulo}</h1>
-      <pre className="bg-gray-100 p-4 rounded whitespace-pre-wrap mb-6">{data.texto}</pre>
+      <pre className="bg-white p-4 rounded whitespace-pre-wrap mb-6 shadow-md">{data.texto}</pre>
       <Link href="/temas" className="text-blue-600 underline">
         ← Voltar para seleção
       </Link>
