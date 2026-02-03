@@ -42,15 +42,25 @@ export default function SubluxacaoPage() {
 
             {/* Imagens */}
             <div className="space-y-4">
-              <h3 className="text-base font-semibold text-gray-800">Imagens clínicas:</h3>
+              
               
               <div className="space-y-4">
                 <div className="border border-gray-200 rounded-lg overflow-hidden">
                   <Image
-                    src="/images/subluxacao Foto.jpg"
+                    src="/images/subluxacao Foto.jpeg"
                     alt="Subluxação - Foto clínica"
-                    width={300}
-                    height={200}
+                    width={600}
+                    height={600}
+                    className="w-full h-auto object-cover"
+                  />
+                </div>
+                
+                <div className="border border-gray-200 rounded-lg overflow-hidden">
+                  <Image
+                    src="/images/subluxacao-esquema.jpeg"
+                    alt="Subluxação - Esquema ilustrativo"
+                    width={600}
+                    height={600}
                     className="w-full h-auto object-cover"
                   />
                 </div>

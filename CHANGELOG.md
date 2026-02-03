@@ -1,5 +1,28 @@
 # Changelog - ClickTrauma PWA
 
+## [3.8.0] - 2025-08-19
+
+### ✨ Novas Funcionalidades
+- **Nova Logo**: Substituição da logo de texto pela logo oficial em todos os cabeçalhos
+  - Home: Logo oficial "clickTrauma+" com símbolo de cruz rosa
+  - Página de temas: Logo padronizada no cabeçalho
+  - Submenu diagnóstico: Logo consistente em todas as páginas
+
+### 🖼️ Melhorias de Imagens
+- **Página Fratura de Raiz**: Adicionada terceira imagem (esquema ilustrativo)
+- **Página Subluxação**: Adicionadas duas novas imagens clínicas
+  - Esquema ilustrativo da subluxação
+  - Anatomia do ligamento periodontal
+
+### 🎨 Melhorias Visuais
+- **Consistência Visual**: Logo padronizada em todas as telas
+- **Qualidade das Imagens**: Imagens clínicas organizadas e bem apresentadas
+- **Layout Responsivo**: Mantida responsividade em todos os dispositivos
+
+### 📁 Organização de Arquivos
+- **Estrutura de Imagens**: Organização melhorada das imagens na pasta `/public/images/`
+- **Nomenclatura**: Nomes descritivos para todas as novas imagens
+
 ## [3.7.0] - 2025-08-07
 
 ### ✨ Novas Funcionalidades

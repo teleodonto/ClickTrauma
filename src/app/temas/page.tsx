@@ -1,5 +1,6 @@
 'use client'
 import { useRouter } from 'next/navigation'
+import Image from 'next/image'
 
 const temas = [
   { slug: 'trauma-deciduos', titulo: 'Trauma em Dentes Decíduos' },
@@ -20,11 +21,16 @@ export default function Temas() {
         
         {/* Área superior branca (25%) */}
         <div className="bg-white h-[25vh] flex flex-col items-center justify-center px-6 text-center">
-          {/* Logo bicolor */}
-          <h1 className="text-3xl font-normal">
-            <span className="text-gray-700">click</span>
-            <span className="text-[#8BC34A]">Trauma</span>
-          </h1>
+          {/* Logo como imagem */}
+          <div>
+            <Image
+              src="/images/logo.jpeg"
+              alt="clickTrauma"
+              width={180}
+              height={120}
+              className="mx-auto"
+            />
+          </div>
         </div>
 
         {/* Área inferior verde (75%) */}

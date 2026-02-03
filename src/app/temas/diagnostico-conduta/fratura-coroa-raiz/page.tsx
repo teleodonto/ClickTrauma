@@ -55,25 +55,25 @@ export default function FraturaCoroaRaizPage() {
 
             {/* Imagens */}
             <div className="space-y-4">
-              <h3 className="text-base font-semibold text-gray-800">Imagens clínicas:</h3>
+              
               
               <div className="space-y-4">
                 <div className="border border-gray-200 rounded-lg overflow-hidden">
                   <Image
-                    src="/images/fratura de coroa e raiz 1.jpg"
+                    src="/images/fratura de coroa e raiz 1.jpeg"
                     alt="Fratura de coroa e raiz - Imagem clínica 1"
-                    width={300}
-                    height={200}
+                    width={600}
+                    height={600}
                     className="w-full h-auto object-cover"
                   />
                 </div>
                 
                 <div className="border border-gray-200 rounded-lg overflow-hidden">
                   <Image
-                    src="/images/fratura de coroa e raiz 2.jpg"
+                    src="/images/fratura de coroa e raiz 2.jpeg"
                     alt="Fratura de coroa e raiz - Imagem clínica 2"
-                    width={300}
-                    height={200}
+                    width={600}
+                    height={600}
                     className="w-full h-auto object-cover"
                   />
                 </div>

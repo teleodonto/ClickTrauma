@@ -1,5 +1,6 @@
 'use client'
 import { useRouter } from 'next/navigation'
+import Image from 'next/image'
 
 export default function Home() {
   const router = useRouter()
@@ -15,11 +16,16 @@ export default function Home() {
         
         {/* Área branca superior (40%) */}
         <div className="bg-white px-6 py-8 text-center" style={{ height: '40%' }}>
-          {/* Logo bicolor */}
-          <h1 className="text-3xl font-normal mb-4">
-            <span className="text-gray-700">click</span>
-            <span className="text-[#8BC34A]">Trauma</span>
-          </h1>
+          {/* Logo como imagem */}
+          <div className="mb-4">
+            <Image
+              src="/images/logo.jpeg"
+              alt="clickTrauma"
+              width={200}
+              height={120}
+              className="mx-auto"
+            />
+          </div>
           
           {/* Texto adicional */}
           <p className="text-gray-600 text-sm leading-relaxed">

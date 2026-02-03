@@ -66,15 +66,15 @@ export default function FraturaCoronariaExposicaoPulparPage() {
 
             {/* Imagens */}
             <div className="space-y-4">
-              <h3 className="text-base font-semibold text-gray-800">Imagens clínicas:</h3>
+              
               
               <div className="space-y-4">
                 <div className="border border-gray-200 rounded-lg overflow-hidden">
                   <Image
-                    src="/images/fratura coronaria com expolsicao.jpg"
+                    src="/images/fratura coronaria com expolsicao.jpeg"
                     alt="Fratura coronária com exposição pulpar - Imagem clínica"
-                    width={300}
-                    height={200}
+                    width={600}
+                    height={600}
                     className="w-full h-auto object-cover"
                   />
                 </div>

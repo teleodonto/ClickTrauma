@@ -42,25 +42,25 @@ export default function AvulsaoPage() {
 
             {/* Imagens */}
             <div className="space-y-4">
-              <h3 className="text-base font-semibold text-gray-800">Imagens clínicas:</h3>
+              
               
               <div className="space-y-4">
                 <div className="border border-gray-200 rounded-lg overflow-hidden">
                   <Image
-                    src="/images/avulsao Foto.jpg"
+                    src="/images/avulsao Foto.jpeg"
                     alt="Avulsão - Foto clínica"
-                    width={300}
-                    height={200}
+                    width={600}
+                    height={600}
                     className="w-full h-auto object-cover"
                   />
                 </div>
                 
                 <div className="border border-gray-200 rounded-lg overflow-hidden">
                   <Image
-                    src="/images/avulsao RX.jpg"
+                    src="/images/avulsao RX.jpeg"
                     alt="Avulsão - Radiografia"
-                    width={300}
-                    height={200}
+                    width={600}
+                    height={600}
                     className="w-full h-auto object-cover"
                   />
                 </div>

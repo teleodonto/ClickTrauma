@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 const opcoesDiagnostico = [
   {
@@ -57,15 +58,21 @@ export default function DiagnosticoCondutaPage() {
       {/* Container mobile centralizado */}
       <div className="w-full max-w-[375px] min-h-screen bg-white shadow-lg relative flex flex-col">
         
-        {/* Área branca superior com logo (25%) */}
-        <div className="bg-white px-6 py-8 text-center" style={{ height: '25%' }}>
-          <h1 className="text-2xl font-bold">
-            <span className="text-gray-600">click</span>
-            <span className="text-[#8BC34A]">Trauma</span>
-          </h1>
+        {/* Área superior branca (25%) */}
+        <div className="bg-white h-[25vh] flex flex-col items-center justify-center px-6 text-center">
+          {/* Logo como imagem */}
+          <div>
+            <Image
+              src="/images/logo.jpeg"
+              alt="clickTrauma"
+              width={180}
+              height={120}
+              className="mx-auto"
+            />
+          </div>
         </div>
 
-        {/* Área verde inferior com botões (75%) */}
+        {/* Área inferior verde com botões (75%) */}
         <div className="bg-[#8BC34A] flex-1 px-6 py-8 flex flex-col justify-center space-y-4">
           <h2 className="text-white text-lg font-medium text-center mb-6">
             Diagnóstico e conduta clínica

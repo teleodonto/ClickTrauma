@@ -56,25 +56,23 @@ export default function FraturaEsmaltePage() {
 
             {/* Imagens */}
             <div className="space-y-4">
-              <h3 className="text-base font-semibold text-gray-800">Imagens clínicas:</h3>
-              
               <div className="space-y-4">
                 <div className="border border-gray-200 rounded-lg overflow-hidden">
                   <Image
-                    src="/images/fratura de esmalte.jpg"
+                    src="/images/fratura de esmalte.jpeg"
                     alt="Fratura de esmalte - Imagem clínica"
-                    width={300}
-                    height={200}
+                    width={600}
+                    height={600}
                     className="w-full h-auto object-cover"
                   />
                 </div>
                 
                 <div className="border border-gray-200 rounded-lg overflow-hidden">
                   <Image
-                    src="/images/fratura de esmalteFoto.jpg"
+                    src="/images/fratura de esmalteFoto.jpeg"
                     alt="Fratura de esmalte - Foto clínica"
-                    width={300}
-                    height={200}
+                    width={600}
+                    height={600}
                     className="w-full h-auto object-cover"
                   />
                 </div>

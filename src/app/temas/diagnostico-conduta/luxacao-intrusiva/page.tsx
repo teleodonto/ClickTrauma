@@ -52,25 +52,25 @@ export default function LuxacaoIntrusivaPage() {
 
             {/* Imagens */}
             <div className="space-y-4">
-              <h3 className="text-base font-semibold text-gray-800">Imagens clínicas:</h3>
+              
               
               <div className="space-y-4">
                 <div className="border border-gray-200 rounded-lg overflow-hidden">
                   <Image
-                    src="/images/luxacao intrusiva Foto.jpg"
+                    src="/images/luxacao intrusiva Foto.jpeg"
                     alt="Luxação intrusiva - Foto clínica"
-                    width={300}
-                    height={200}
+                    width={600}
+                    height={600}
                     className="w-full h-auto object-cover"
                   />
                 </div>
                 
                 <div className="border border-gray-200 rounded-lg overflow-hidden">
                   <Image
-                    src="/images/luxacao intrusiva RX.jpg"
+                    src="/images/luxacao intrusiva RX.jpeg"
                     alt="Luxação intrusiva - Radiografia"
-                    width={300}
-                    height={200}
+                    width={600}
+                    height={600}
                     className="w-full h-auto object-cover"
                   />
                 </div>
