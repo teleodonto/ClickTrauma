@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { notFound } from 'next/navigation'
 
 const conteudos: Record<string, { titulo: string; texto: string }> = {
   'trauma-deciduos': {
@@ -95,31 +96,24 @@ Ao subir e descer do transporte coletivo, fazê-lo de maneira adequada, sem corr
   }
 }
 
-export default async function TemaPage({ params }: { params: { slug: string } }) {
+export async function generateStaticParams() {
+  // 'diagnostico-conduta' tem rota estatica propria (com submenu) e nao entra aqui
+  return Object.keys(conteudos)
+    .filter((slug) => slug !== 'diagnostico-conduta')
+    .map((slug) => ({ slug }))
+}
+
+export default async function TemaPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>
+}) {
   const { slug } = await params
-  
-  // Redirecionar diagnóstico-conduta para submenu
-  if (slug === 'diagnostico-conduta') {
-    return (
-      <main className="min-h-screen bg-gray-100 flex items-center justify-center p-4">
-        <div className="w-full max-w-[375px] min-h-screen bg-white shadow-lg relative flex flex-col">
-          <div className="bg-white px-6 py-8 text-center border-b border-gray-200">
-            <h1 className="text-xl font-semibold text-gray-800">
-              Redirecionando...
-            </h1>
-          </div>
-          <div className="flex-1 bg-white px-6 py-6 flex items-center justify-center">
-            <p className="text-gray-600">Carregando submenu...</p>
-          </div>
-        </div>
-      </main>
-    )
-  }
-  
+
   const conteudo = conteudos[slug]
 
   if (!conteudo) {
-    return <div>Conteúdo não encontrado</div>
+    notFound()
   }
 
   return (
