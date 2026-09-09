@@ -39,3 +39,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Auditoria de seguranca: descreve com detalhe operacional fraquezas ainda
+# nao corrigidas do ambiente publicado, e este repositorio e publico.
+# Manter fora do controle de versao ate os achados P1 e P2 estarem resolvidos.
+/docs/security-audit/
