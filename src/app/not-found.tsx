@@ -1,21 +1,12 @@
 import Link from 'next/link'
-import Image from 'next/image'
-import { asset } from '@/lib/base-path'
+import { CabecalhoMarca } from '@/components/logo-clicktrauma'
 
 export default function NaoEncontrada() {
   return (
     <main className="min-h-screen bg-gray-100 flex items-center justify-center sm:p-4">
       <div className="w-full max-w-[375px] min-h-screen bg-white shadow-lg flex flex-col">
 
-        <div className="bg-white px-6 py-8 text-center border-b border-gray-200">
-          <Image
-            src={asset("/images/logo.jpeg")}
-            alt="clickTrauma"
-            width={180}
-            height={120}
-            className="mx-auto"
-          />
-        </div>
+        <CabecalhoMarca />
 
         <div className="flex-1 px-6 py-10 flex flex-col items-center justify-center text-center">
           <h1 className="text-xl font-semibold text-gray-800 mb-3">
@@ -29,7 +20,7 @@ export default function NaoEncontrada() {
 
         {/* Sempre oferecer uma saida: um beco sem saida numa pagina de erro e
             o que mais faz o usuario abandonar o app. */}
-        <div className="bg-white px-6 py-6 border-t border-gray-200 space-y-3">
+        <div className="sticky bottom-0 bg-white px-6 pt-6 pb-[calc(1.5rem+env(safe-area-inset-bottom))] border-t border-gray-200 space-y-3">
           <Link
             href="/temas"
             className="flex items-center justify-center w-full bg-[#8BC34A] text-gray-900 py-3 px-6 rounded-lg font-medium text-base hover:bg-[#7AB23A] transition-colors"

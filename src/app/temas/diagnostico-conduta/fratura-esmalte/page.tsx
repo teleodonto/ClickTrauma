@@ -83,7 +83,7 @@ export default function FraturaEsmaltePage() {
         </div>
 
         {/* Botões */}
-        <div className="bg-white px-6 py-6 border-t border-gray-200">
+        <div className="sticky bottom-0 bg-white px-6 pt-6 pb-[calc(1.5rem+env(safe-area-inset-bottom))] border-t border-gray-200">
           <div className="flex space-x-3">
             <Link 
               href="/temas/diagnostico-conduta"

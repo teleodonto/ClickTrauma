@@ -1,6 +1,5 @@
 import Link from 'next/link'
-import Image from 'next/image'
-import { asset } from '@/lib/base-path'
+import { CabecalhoMarca } from '@/components/logo-clicktrauma'
 
 const opcoesDiagnostico = [
   {
@@ -59,19 +58,7 @@ export default function DiagnosticoCondutaPage() {
       {/* Container mobile centralizado */}
       <div className="w-full max-w-[375px] min-h-screen bg-white shadow-lg relative flex flex-col">
         
-        {/* Área superior branca (25%) */}
-        <div className="bg-white h-[25vh] flex flex-col items-center justify-center px-6 text-center">
-          {/* Logo como imagem */}
-          <div>
-            <Image
-              src={asset("/images/logo.jpeg")}
-              alt="clickTrauma"
-              width={180}
-              height={120}
-              className="mx-auto"
-            />
-          </div>
-        </div>
+        <CabecalhoMarca />
 
         {/* Área inferior verde com botões (75%) */}
         <div className="bg-[#8BC34A] flex-1 px-6 py-8 flex flex-col justify-center space-y-4">
@@ -91,7 +78,7 @@ export default function DiagnosticoCondutaPage() {
         </div>
 
         {/* Botão Voltar ao Menu */}
-        <div className="bg-white px-6 py-6 border-t border-gray-200">
+        <div className="sticky bottom-0 bg-white px-6 pt-6 pb-[calc(1.5rem+env(safe-area-inset-bottom))] border-t border-gray-200">
           <div className="flex justify-end">
             <Link 
               href="/temas"

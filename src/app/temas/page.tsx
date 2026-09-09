@@ -1,8 +1,7 @@
 'use client'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
-import Image from 'next/image'
-import { asset } from '@/lib/base-path'
+import { CabecalhoMarca } from '@/components/logo-clicktrauma'
 
 const temas = [
   { slug: 'trauma-deciduos', titulo: 'Trauma em Dentes Decíduos' },
@@ -19,18 +18,9 @@ export default function Temas() {
   return (
     <main className="min-h-screen bg-gray-100 flex items-center justify-center sm:p-4">
       {/* Container mobile centralizado */}
-      <div className="w-full max-w-[375px] min-h-screen bg-white shadow-lg relative">
+      <div className="w-full max-w-[375px] min-h-screen bg-white shadow-lg relative flex flex-col">
 
-        {/* Área superior branca (25%) */}
-        <div className="bg-white h-[25vh] flex flex-col items-center justify-center px-6 text-center">
-          {/*
-            Volta para a selecao de perfil. Fica no canto superior esquerdo,
-            posicao convencional de retorno, fora do fluxo dos botoes de tema
-            para nao competir com a navegacao principal. E um link de verdade
-            (nao um botao com onClick) para funcionar com teclado, leitor de
-            tela e abrir em nova aba. O rotulo diz o resultado da acao, que e
-            mais claro que uma seta sozinha.
-          */}
+        <div className="relative">
           <Link
             href="/"
             className="absolute top-2 left-2 inline-flex items-center gap-1 min-h-[44px] px-3 text-sm text-gray-700 rounded-lg hover:text-gray-900 hover:bg-gray-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700 transition-colors"
@@ -49,21 +39,12 @@ export default function Temas() {
             </svg>
             Trocar perfil
           </Link>
-
-          {/* Logo como imagem */}
-          <div>
-            <Image
-              src={asset("/images/logo.jpeg")}
-              alt="clickTrauma"
-              width={180}
-              height={120}
-              className="mx-auto"
-            />
-          </div>
         </div>
 
+        <CabecalhoMarca />
+
         {/* Área inferior verde (75%) */}
-        <div className="bg-[#8BC34A] h-[75vh] flex flex-col justify-start px-6 pt-8">
+        <div className="bg-[#8BC34A] flex-1 flex flex-col justify-start px-6 pt-8 pb-8">
           {/* Titulo da pagina: a tela se identifica pela logo, entao o h1 fica
               acessivel a leitores de tela sem alterar o visual. */}
           <h1 className="sr-only">Temas</h1>
