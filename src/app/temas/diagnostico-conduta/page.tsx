@@ -62,9 +62,20 @@ export default function DiagnosticoCondutaPage() {
 
         {/* Área inferior verde com botões (75%) */}
         <div className="bg-[#8BC34A] flex-1 px-6 py-8 flex flex-col justify-center space-y-4">
-          <h1 className="text-gray-900 text-lg font-medium text-center mb-6">
+          <h1 className="text-gray-900 text-lg font-medium text-center">
             Diagnóstico e conduta clínica
           </h1>
+          {/*
+            Contagem explicita: a lista nao cabe na tela e, com barra de
+            rolagem sobreposta (padrao em macOS, iOS e Android), nada indica
+            que ha mais itens abaixo. Dizer quantos sao e o unico sinal que
+            funciona mesmo sem a pessoa rolar, e continua correto em telas
+            grandes onde todos aparecem. O numero vem do proprio array, para
+            nao desatualizar se a lista mudar.
+          */}
+          <p className="text-gray-900 text-sm text-center mt-1 mb-6 opacity-90">
+            {opcoesDiagnostico.length} tipos de trauma
+          </p>
           
           {opcoesDiagnostico.map((opcao) => (
             <Link
@@ -78,7 +89,7 @@ export default function DiagnosticoCondutaPage() {
         </div>
 
         {/* Botão Voltar ao Menu */}
-        <div className="sticky bottom-0 bg-white px-6 pt-6 pb-[calc(1.5rem+env(safe-area-inset-bottom))] border-t border-gray-200">
+        <div className="sticky bottom-0 z-10 bg-white px-6 pt-6 before:pointer-events-none before:absolute before:inset-x-0 before:-top-6 before:h-6 before:bg-gradient-to-t before:from-white before:to-transparent pb-[calc(1.5rem+env(safe-area-inset-bottom))] border-t border-gray-200">
           <div className="flex justify-end">
             <Link 
               href="/temas"

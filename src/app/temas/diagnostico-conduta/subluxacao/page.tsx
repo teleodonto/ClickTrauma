@@ -71,7 +71,7 @@ export default function SubluxacaoPage() {
         </div>
 
         {/* Botões */}
-        <div className="sticky bottom-0 bg-white px-6 pt-6 pb-[calc(1.5rem+env(safe-area-inset-bottom))] border-t border-gray-200">
+        <div className="sticky bottom-0 z-10 bg-white px-6 pt-6 before:pointer-events-none before:absolute before:inset-x-0 before:-top-6 before:h-6 before:bg-gradient-to-t before:from-white before:to-transparent pb-[calc(1.5rem+env(safe-area-inset-bottom))] border-t border-gray-200">
           <div className="flex space-x-3">
             <Link 
               href="/temas/diagnostico-conduta"

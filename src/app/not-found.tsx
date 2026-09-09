@@ -20,7 +20,7 @@ export default function NaoEncontrada() {
 
         {/* Sempre oferecer uma saida: um beco sem saida numa pagina de erro e
             o que mais faz o usuario abandonar o app. */}
-        <div className="sticky bottom-0 bg-white px-6 pt-6 pb-[calc(1.5rem+env(safe-area-inset-bottom))] border-t border-gray-200 space-y-3">
+        <div className="sticky bottom-0 z-10 bg-white px-6 pt-6 before:pointer-events-none before:absolute before:inset-x-0 before:-top-6 before:h-6 before:bg-gradient-to-t before:from-white before:to-transparent pb-[calc(1.5rem+env(safe-area-inset-bottom))] border-t border-gray-200 space-y-3">
           <Link
             href="/temas"
             className="flex items-center justify-center w-full bg-[#8BC34A] text-gray-900 py-3 px-6 rounded-lg font-medium text-base hover:bg-[#7AB23A] transition-colors"
