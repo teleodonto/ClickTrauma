@@ -4,7 +4,7 @@ import { asset } from '@/lib/base-path'
 
 export default function LuxacaoLateralPage() {
   return (
-    <main className="min-h-screen bg-gray-100 flex items-center justify-center p-4">
+    <main className="min-h-screen bg-gray-100 flex items-center justify-center sm:p-4">
       {/* Container mobile centralizado */}
       <div className="w-full max-w-[375px] min-h-screen bg-white shadow-lg relative flex flex-col">
         
@@ -78,13 +78,13 @@ export default function LuxacaoLateralPage() {
           <div className="flex space-x-3">
             <Link 
               href="/temas/diagnostico-conduta"
-              className="inline-flex items-center justify-center w-1/2 bg-[#8BC34A] text-white py-3 px-6 rounded-lg font-medium text-base hover:bg-[#7AB23A] transition-colors"
+              className="inline-flex items-center justify-center w-1/2 bg-[#8BC34A] text-gray-900 py-3 px-6 rounded-lg font-medium text-base hover:bg-[#7AB23A] transition-colors"
             >
               Voltar
             </Link>
             <Link 
               href="/temas"
-              className="inline-flex items-center justify-center w-1/2 bg-[#8BC34A] text-white py-3 px-6 rounded-lg font-medium text-base hover:bg-[#7AB23A] transition-colors"
+              className="inline-flex items-center justify-center w-1/2 bg-[#8BC34A] text-gray-900 py-3 px-6 rounded-lg font-medium text-base hover:bg-[#7AB23A] transition-colors"
             >
               Voltar ao Menu
             </Link>

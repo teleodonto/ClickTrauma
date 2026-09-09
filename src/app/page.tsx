@@ -11,12 +11,15 @@ export default function Home() {
   }
 
   return (
-    <main className="min-h-screen bg-gray-100 flex items-center justify-center p-4">
+    <main className="min-h-screen bg-gray-100 flex items-center justify-center sm:p-4">
       {/* Container mobile centralizado */}
       <div className="w-full max-w-[375px] min-h-screen bg-white shadow-lg relative">
         
         {/* Área branca superior (40%) */}
         <div className="bg-white px-6 py-8 text-center" style={{ height: '40%' }}>
+          {/* Nome da aplicacao para leitores de tela: a tela se identifica
+              visualmente pela logo, que e uma imagem. */}
+          <h1 className="sr-only">ClickTrauma</h1>
           {/* Logo como imagem */}
           <div className="mb-4">
             <Image
@@ -36,7 +39,7 @@ export default function Home() {
         {/* Área inferior verde (60%) */}
         <div className="bg-[#8BC34A] h-[60vh] flex flex-col justify-start px-6 pt-6">
           {/* Call to Action */}
-          <p className="text-white text-center mb-6 font-medium">
+          <p className="text-gray-900 text-center mb-6 font-medium">
             Selecione seu perfil:
           </p>
           
