@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import { asset } from '@/lib/base-path'
 
 export default function FraturaCoronariaExposicaoPulparPage() {
   return (
@@ -71,7 +72,7 @@ export default function FraturaCoronariaExposicaoPulparPage() {
               <div className="space-y-4">
                 <div className="border border-gray-200 rounded-lg overflow-hidden">
                   <Image
-                    src="/images/fratura coronaria com expolsicao.jpeg"
+                    src={asset("/images/fratura coronaria com expolsicao.jpeg")}
                     alt="Fratura coronária com exposição pulpar - Imagem clínica"
                     width={600}
                     height={600}

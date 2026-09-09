@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import { asset } from '@/lib/base-path'
 
 export default function SubluxacaoPage() {
   return (
@@ -47,7 +48,7 @@ export default function SubluxacaoPage() {
               <div className="space-y-4">
                 <div className="border border-gray-200 rounded-lg overflow-hidden">
                   <Image
-                    src="/images/subluxacao Foto.jpeg"
+                    src={asset("/images/subluxacao Foto.jpeg")}
                     alt="Subluxação - Foto clínica"
                     width={600}
                     height={600}
@@ -57,7 +58,7 @@ export default function SubluxacaoPage() {
                 
                 <div className="border border-gray-200 rounded-lg overflow-hidden">
                   <Image
-                    src="/images/subluxacao-esquema.jpeg"
+                    src={asset("/images/subluxacao-esquema.jpeg")}
                     alt="Subluxação - Esquema ilustrativo"
                     width={600}
                     height={600}

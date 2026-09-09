@@ -1,6 +1,7 @@
 'use client'
 import { useRouter } from 'next/navigation'
 import Image from 'next/image'
+import { asset } from '@/lib/base-path'
 
 export default function Home() {
   const router = useRouter()
@@ -19,7 +20,7 @@ export default function Home() {
           {/* Logo como imagem */}
           <div className="mb-4">
             <Image
-              src="/images/logo.jpeg"
+              src={asset("/images/logo.jpeg")}
               alt="clickTrauma"
               width={200}
               height={120}

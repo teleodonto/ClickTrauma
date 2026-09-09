@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import { asset } from '@/lib/base-path'
 
 export default function FraturaRaizPage() {
   return (
@@ -71,7 +72,7 @@ export default function FraturaRaizPage() {
               <div className="space-y-4">
                 <div className="border border-gray-200 rounded-lg overflow-hidden">
                   <Image
-                    src="/images/fratura de raiz.jpeg"
+                    src={asset("/images/fratura de raiz.jpeg")}
                     alt="Fratura de raiz - Esquema"
                     width={600}
                     height={600}
@@ -81,7 +82,7 @@ export default function FraturaRaizPage() {
                 
                 <div className="border border-gray-200 rounded-lg overflow-hidden">
                   <Image
-                    src="/images/fratura de raiz 2.jpeg"
+                    src={asset("/images/fratura de raiz 2.jpeg")}
                     alt="Fratura de raiz - Esquema 2"
                     width={600}
                     height={600}
@@ -91,7 +92,7 @@ export default function FraturaRaizPage() {
 
                 <div className="border border-gray-200 rounded-lg overflow-hidden">
                   <Image
-                    src="/images/fratura de raiz Foto.jpeg"
+                    src={asset("/images/fratura de raiz Foto.jpeg")}
                     alt="Fratura de raiz - Foto clínica"
                     width={600}
                     height={600}

@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import { asset } from '@/lib/base-path'
 
 export default function LuxacaoIntrusivaPage() {
   return (
@@ -57,7 +58,7 @@ export default function LuxacaoIntrusivaPage() {
               <div className="space-y-4">
                 <div className="border border-gray-200 rounded-lg overflow-hidden">
                   <Image
-                    src="/images/luxacao intrusiva Foto.jpeg"
+                    src={asset("/images/luxacao intrusiva Foto.jpeg")}
                     alt="Luxação intrusiva - Foto clínica"
                     width={600}
                     height={600}
@@ -67,7 +68,7 @@ export default function LuxacaoIntrusivaPage() {
                 
                 <div className="border border-gray-200 rounded-lg overflow-hidden">
                   <Image
-                    src="/images/luxacao intrusiva RX.jpeg"
+                    src={asset("/images/luxacao intrusiva RX.jpeg")}
                     alt="Luxação intrusiva - Radiografia"
                     width={600}
                     height={600}

@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import { asset } from '@/lib/base-path'
 
 export default function FraturaCoroaRaizPage() {
   return (
@@ -60,7 +61,7 @@ export default function FraturaCoroaRaizPage() {
               <div className="space-y-4">
                 <div className="border border-gray-200 rounded-lg overflow-hidden">
                   <Image
-                    src="/images/fratura de coroa e raiz 1.jpeg"
+                    src={asset("/images/fratura de coroa e raiz 1.jpeg")}
                     alt="Fratura de coroa e raiz - Imagem clínica 1"
                     width={600}
                     height={600}
@@ -70,7 +71,7 @@ export default function FraturaCoroaRaizPage() {
                 
                 <div className="border border-gray-200 rounded-lg overflow-hidden">
                   <Image
-                    src="/images/fratura de coroa e raiz 2.jpeg"
+                    src={asset("/images/fratura de coroa e raiz 2.jpeg")}
                     alt="Fratura de coroa e raiz - Imagem clínica 2"
                     width={600}
                     height={600}

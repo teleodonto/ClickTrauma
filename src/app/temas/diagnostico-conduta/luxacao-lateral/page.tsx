@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import { asset } from '@/lib/base-path'
 
 export default function LuxacaoLateralPage() {
   return (
@@ -60,7 +61,7 @@ export default function LuxacaoLateralPage() {
               <div className="space-y-4">
                 <div className="border border-gray-200 rounded-lg overflow-hidden">
                   <Image
-                    src="/images/luxacao lateral Foto.jpeg"
+                    src={asset("/images/luxacao lateral Foto.jpeg")}
                     alt="Luxação lateral - Foto clínica"
                     width={600}
                     height={600}

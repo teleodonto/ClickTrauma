@@ -1,6 +1,7 @@
 'use client'
 import { useRouter } from 'next/navigation'
 import Image from 'next/image'
+import { asset } from '@/lib/base-path'
 
 const temas = [
   { slug: 'trauma-deciduos', titulo: 'Trauma em Dentes Decíduos' },
@@ -24,7 +25,7 @@ export default function Temas() {
           {/* Logo como imagem */}
           <div>
             <Image
-              src="/images/logo.jpeg"
+              src={asset("/images/logo.jpeg")}
               alt="clickTrauma"
               width={180}
               height={120}

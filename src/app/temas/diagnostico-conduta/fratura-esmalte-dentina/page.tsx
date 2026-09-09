@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import { asset } from '@/lib/base-path'
 
 export default function FraturaEsmalteDentinaPage() {
   return (
@@ -49,7 +50,7 @@ export default function FraturaEsmalteDentinaPage() {
               <div className="space-y-4">
                 <div className="border border-gray-200 rounded-lg overflow-hidden">
                   <Image
-                    src="/images/fratura esmalte e dentina.jpeg"
+                    src={asset("/images/fratura esmalte e dentina.jpeg")}
                     alt="Fratura de esmalte e dentina - Esquema"
                     width={600}
                     height={600}
@@ -59,7 +60,7 @@ export default function FraturaEsmalteDentinaPage() {
                 
                 <div className="border border-gray-200 rounded-lg overflow-hidden">
                   <Image
-                    src="/images/fratura esmalte e dentinaFoto.jpeg"
+                    src={asset("/images/fratura esmalte e dentinaFoto.jpeg")}
                     alt="Fratura de esmalte e dentina - Foto clínica"
                     width={1200}
                     height={600}

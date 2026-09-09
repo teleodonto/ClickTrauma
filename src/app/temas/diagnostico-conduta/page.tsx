@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import { asset } from '@/lib/base-path'
 
 const opcoesDiagnostico = [
   {
@@ -63,7 +64,7 @@ export default function DiagnosticoCondutaPage() {
           {/* Logo como imagem */}
           <div>
             <Image
-              src="/images/logo.jpeg"
+              src={asset("/images/logo.jpeg")}
               alt="clickTrauma"
               width={180}
               height={120}

@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import { asset } from '@/lib/base-path'
 
 export default function AvulsaoPage() {
   return (
@@ -47,7 +48,7 @@ export default function AvulsaoPage() {
               <div className="space-y-4">
                 <div className="border border-gray-200 rounded-lg overflow-hidden">
                   <Image
-                    src="/images/avulsao Foto.jpeg"
+                    src={asset("/images/avulsao Foto.jpeg")}
                     alt="Avulsão - Foto clínica"
                     width={600}
                     height={600}
@@ -57,7 +58,7 @@ export default function AvulsaoPage() {
                 
                 <div className="border border-gray-200 rounded-lg overflow-hidden">
                   <Image
-                    src="/images/avulsao RX.jpeg"
+                    src={asset("/images/avulsao RX.jpeg")}
                     alt="Avulsão - Radiografia"
                     width={600}
                     height={600}
